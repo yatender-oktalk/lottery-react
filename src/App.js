@@ -29,6 +29,19 @@ class App extends Component {
           This contract is having balance
           {web3.utils.fromWei(this.state.balance, "ether")} ether
         </p>
+
+        <hr />
+        <form>
+          <h4>Want to try your luck?</h4>
+          <div>
+            <label> Amount of ether to enter</label>
+
+            <input
+              value={this.state.value}
+              onChange={(event) => this.setState({ value: event.target.value })}
+            />
+          </div>
+        </form>
       </div>
     );
   }
