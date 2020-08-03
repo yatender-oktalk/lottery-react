@@ -40,6 +40,9 @@ class App extends Component {
               value={this.state.value}
               onChange={(event) => this.setState({ value: event.target.value })}
             />
+            <div>
+              <button>Enter</button>
+            </div>
           </div>
         </form>
       </div>
